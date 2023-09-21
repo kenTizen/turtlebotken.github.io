@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=no">
+    <meta name="description"
+        content="Turtlebot4 User Manual TurtleBot 4 Lite (left) and TurtleBot 4 (right) TurtleBot 4 is the next-generation of the world&#39;s most popular open sour...">
+    <meta name="revised" content="27886cafd1f154db8cbf8d3bc3edaa734ce976da">
+    <meta name="author" content="turtlebot">
+    <meta name="generator" content="rundocs/jekyll-rtd-theme v2.0.10">
+    <meta name="theme-color" content="#2980b9">
+    <title> Turtlebot4 lite tutorial</title>
+    
+    <meta name="twitter:creator" content="@rundocs/jekyll-rtd-theme v2.0.10">
+    <meta property="og:title" content="User Manual · Turtlebot4 User Manual">
+    <meta property="og:description"
+        content="Turtlebot4 User Manual TurtleBot 4 Lite (left) and TurtleBot 4 (right) TurtleBot 4 is the next-generation of the world&#39;s most popular open sour...">
+    
+    <script
+        type="application/ld+json"> { "@context": "https://schema.org", "@type": "Article", "mainEntityOfPage": { "@type": "WebPage", "@id": "https://github.com/turtlebot4-user-manual/" }, "headline": "User Manual · Turtlebot4 User Manual", "image": [], "author": { "@type": "Person", "name": "turtlebot" }, "datePublished": "2022-02-08T21:05:55+00:00", "dateModified": "2023-09-08T20:48:19+00:00", "publisher": { "@type": "Organization", "name": "turtlebot", "logo": { "@type": "ImageObject", "url": "https://avatars.githubusercontent.com/u/2200113?v=4" } }, "description": "Turtlebot4 User Manual TurtleBot 4 Lite (left) and TurtleBot 4 (right) TurtleBot 4 is the next-generation of the world&#39;s most popular open sour..." } </script>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rundocs/jekyll-rtd-theme@2.0.10/assets/css/theme.min.css">
+    <style>
+        .header {
+            color: #fff;
+            background: #000000;
+            background-image: url("/turtlebot4-user-manual/media/turtlebot4_logo.png");
+            background-size: 174px 60px;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: 5px;
+            display: inline-block;
+            height: 140px;
+            content: ""
+        }
+
+        .title a {
+            position: relative;
+            top: 45px
+        }
+
+        a img {
+            border: 0;
+            outline: none
+        }
+
+        .header input {
+            position: relative;
+            top: 45px
+        }
+
+        .header-bar-wrap {
+            background: #000000;
+            position: relative;
+            min-height: 140px;
+            display: inline-block;
+            align-items: center;
+            width: 100%
+        }
+
+        .header-row {
+            display: inline-block;
+            align-items: center;
+            margin-top: 35px;
+            height: 100%
+        }
+
+        .header-row::after {
+            content: "";
+            clear: both;
+            display: grid
+        }
+
+        .header-logo {
+            background: #000000;
+            outline: #000000;
+            color: #000000;
+            display: inline-block;
+            background-size: 95% 95%;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            margin-left: 20px;
+            margin-right: 30px;
+            margin-top: 3px
+        }
+
+        .header-ul {
+            height: 100%;
+            overflow: auto;
+            text-align: center;
+            align-items: center
+        }
+
+       
+        .cpr-logo {
+            background-image: url("C:/Users/tizen/Desktop/Portfolio1/images/logo_blanc_fondtransparent.png");
+            width:120px;
+            height: 80px;
+        }
+        
+        .ros-logo {
+            background-image: url("C:/Users/tizen/Desktop/Portfolio1/images/ros_logo.png");
+            height: 40px;
+            width: 160px;
+            margin-bottom: 23px;
+        }
+
+        .github-logo {
+            background-image: url("C:/Users/tizen/Desktop/Portfolio1/images/github_logo.png");
+            height: 50px;
+            width: 50px;
+            margin-bottom: 18px;
+        }
+
+        
+
+        .fa-plus-square-o:before {
+            content: ""
+        }
+
+        .toctree .caption {
+            color: red
+        }
+
+        figure {
+            padding: 4px;
+            margin: auto
+        }
+
+        figcaption {
+            background-color: white;
+            color: black;
+            font-style: italic;
+            font-size: small;
+            padding: 2px;
+            text-align: center
+        }
+
+        .aligncenter {
+            text-align: center
+        }
+
+        td {
+            text-align: left;
+            vertical-align: middle
+        }
+
+        .center-table {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center
+        }
+
+        .markdown-body ul {
+            padding-left: 1em
+        }
+
+        .fa-home {
+            font-size: 30px;
+        }
+       
+    </style>
+    
+
+</head>
+<body class="container">
+    <div class="sidebar-wrap overflow-hidden">
+        <div class="sidebar height-full overflow-y-scroll overflow-x-hidden">
+            <div class="header d-flex flex-column p-3 text-center">
+                <div class="title pb-1"> <a class="h3 no-underline py-1 px-2 rounded-1" href="C:\Users\tizen\Desktop\Portfolio1\serveurRos.html"
+                       > <i class="fa fa-home" aria-hidden="true" ></i></fa-3x></i> Serveur ROS </a> </div> <span
+                    class="version"></span>
+             
+            </div>
+            <div class="toctree py-2" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul> </ul> <a class="caption d-block text-uppercase no-wrap px-2 py-0"
+                    href="C:/Users/tizen/Desktop/Portfolio1/Tutoriel/Virtualisation/Installation_de_la_VM.html"> Virtualisation [étape 1] </a>
+                <ul>
+                    <li class="toc level-1 " data-sort="1" data-level="1"> <a class="d-flex flex-items-baseline "
+                            href="C:/Users/tizen/Desktop/Portfolio1/Tutoriel/Virtualisation/Installation_de_la_VM.html">1. Installation de la VM</a> </li>
+                    <li class="toc level-1 " data-sort="2" data-level="1"> <a class="d-flex flex-items-baseline "
+                            href="C:\Users\tizen\Desktop\Portfolio1\Tutoriel\Virtualisation\Configuration_de_la_VM.html">2. Configuration de la VM</a> </li>
+                </ul> <a class="caption d-block text-uppercase no-wrap px-2 py-0" href="C:\Users\tizen\Desktop\Portfolio1\Tutoriel\Serveur_ROS2\C'est_quoi_ROS.html">
+                    Serveur ROS2 [étape 2]
+                 </a>
+                <ul>
+                    <li class="toc level-1 " data-sort="1" data-level="1"> <a class="d-flex flex-items-baseline "
+                            href="C:\Users\tizen\Desktop\Portfolio1\Tutoriel\Serveur_ROS2\C'est_quoi_ROS.html">1. C'est quoi ROS ?</a> </li>
+                    <li class="toc level-1 " data-sort="2" data-level="1"> <a class="d-flex flex-items-baseline "
+                            href="C:\Users\tizen\Desktop\Portfolio1\Tutoriel\Serveur_ROS2\Installation de ROS2.html">2. Installation de ROS2</a> </li>
+                    <li class="toc level-1 " data-sort="3" data-level="1"> <a class="d-flex flex-items-baseline "
+                            href="C:\Users\tizen\Desktop\Portfolio1\Tutoriel\Serveur_ROS2\networking.html">3. Configuration du turtlebot4-lite </a> </li>
+                   
+                </ul> <a class="caption d-block text-uppercase no-wrap px-2 py-0"
+                    href="C:\Users\tizen\Desktop\Portfolio1\Tutoriel\Control_Robot\Contrôle_de_mouvements.html"> Contrôle du Robot [étape 3] </a>
+                <ul>
+                    <li class="toc level-1 " data-sort="2" data-level="1"> <a class="d-flex flex-items-baseline "
+                            href="C:\Users\tizen\Desktop\Portfolio1\Tutoriel\Control_Robot\Contrôle_de_mouvements.html">1. Contrôle de mouvements</a>
+                    </li>
+                    <li class="toc level-1 " data-sort="3" data-level="1"> <a class="d-flex flex-items-baseline "
+                            href="C:\Users\tizen\Desktop\Portfolio1\Tutoriel\Control_Robot\rviz.html">2. Rviz2 pour la camera et le Lydar</a> </li>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrap">
+        <div class="header d-flex flex-justify-between p-2 hide-lg hide-xl" aria-label="top navigation"> <button
+                id="toggle" aria-label="Toggle menu" class="btn-octicon p-2 m-0 text-white" type="button"> <i
+                    class="fa fa-bars"></i> </button>
+            <div class="title flex-1 d-flex flex-justify-center"> <a class="h4 no-underline py-1 px-2 rounded-1"
+                    href="/turtlebot4-user-manual/">Serveur ROS sur une machine virtuelle Ubuntu</a> </div>
+        </div>
+        <div class="header-bar-wrap">
+            <div class="header-row">
+                <ul class="header-ul"> </ul>
+            </div>
+            <div class="header-row">
+                <ul class="header-ul">  
+                        <div class="header-logo cpr-logo no-underline" border="0"></div>
+                      <a href="https://docs.ros.org/en/humble/index.html">
+                        <div class="header-logo ros-logo no-underline" border="0"></div>
+                    </a>  <a href="https://github.com/turtlebot">
+                        <div class="header-logo github-logo no-underline" border="0"></div>
+                     </ul>
+                    </div>
+        </div>
+        <div lass="content p-3 p-sm-5">
+            <div class="navigation-top d-flex flex-justify-between">
+                <ul class="breadcrumb" role="navigation" aria-label="breadcrumbs navigation">
+                    <li class="breadcrumb-item"> <a class="no-underline" href="/turtlebot4-user-manual/" title="/"> <i
+                                class="fa fa-home"></i> </a> </li>
+                    <li class="breadcrumb-item" aria-current="page">index.md</li>
+                </ul>
+            </div>
+            <hr>
+            <div role="main" itemscope="itemscope" itemtype="https://schema.org/Article">
+                <div class="markdown-body" itemprop="articleBody">
+                    <h1 id="turtlebot4-user-manual">Installation de Ros 2</h1>
+
+                        <p>Les instructions suivantes vont permettre à l'utilisateur d'installer Ros 2</label></p> 
+                    
+                        <p><b>Assurez-vous que vous êtes sur votre machine virtuelle et ouvrez un Terminal</b></p>
+
+                    <h2 id="user-pc">Définir une locale</h2>
+                    
+                         <p>Assurez-vous que vous avez une locale qui supporte UTF-8. Si vous êtes dans un environnement minimal (comme un conteneur docker), la locale peut être quelque chose de minimal comme POSIX. Nous testons avec les paramètres suivants.
+                             Cependant, cela devrait fonctionner si vous utilisez une locale différente supportant l'UTF-8. </p>
+
+                             <div class="highlight">
+                                <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+                            locale  <span class="c1"># check for UTF-8</span>
+
+     sudo apt update <span class="o">&amp;&amp;</span> sudo apt install locales
+     sudo locale-gen en_US en_US.UTF-8
+     sudo update-locale <span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8 <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8<span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+                                    
+    locale  <span class="c1"># verify settings</span>
+                                    </pre></div>
+                               
+                        
+                    <h2>Configuration des sources</h2>
+                        <p> Vous devrez ajouter le dépôt ROS 2 apt à votre système.
+
+                            Assurez-vous d'abord que le dépôt Ubuntu Universe est activé.</p>
+                       
+
+                        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+     sudo apt install software-properties-common
+     sudo add-apt-repository universe
+                            </pre></div>
+                        
+                            <p>Ajoutez maintenant la clé GPG de ROS 2 avec apt.</p>
+                            <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+     sudo apt update <span class="o">&amp;&amp;</span> sudo apt install curl -y
+     sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+                                </pre></div>
+                            <p>Ajoutez ensuite le dépôt à votre liste de sources.</p>
+                                
+                            <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2"> signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu </span><span class="k">$(</span>. /etc/os-release <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="nv">$UBUNTU_CODENAME</span><span class="k">)</span><span class="s2"> main&quot;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/ros2.list &gt; /dev/null
+                            </pre></div>
+
+                    <h2>Installer le paquet Ros2</h3>
+                                <p>Mettez à jour vos caches de dépôts apt après avoir configuré les dépôts.</p>
+                                
+                                    <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+    sudo apt update
+                                </pre></div>
+
+                                <p>Les paquets ROS 2 sont construits sur des systèmes Ubuntu fréquemment mis à jour. Il est toujours recommandé de s'assurer que votre système est à jour avant d'installer de nouveaux paquets.</p>
+                                    <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+    sudo apt upgrade
+                                </pre></div>
+
+                                <p>Installation sur le bureau (recommandée) : ROS, RViz, démos, tutoriels</p>
+
+                                    <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+    sudo apt install -y ros-humble-desktop
+                                </pre></div>
+
+                                <p>Installation de ROS-Base (Bare Bones) : Bibliothèques de communication, paquets de messages, outils de ligne de commande. Pas d'outils GUI.</p>
+                                    <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+    sudo apt install -y ros-humble-ros-base
+                                    </pre></div>    
+                                <p>Outils de développement : Compilateurs et autres outils permettant de créer des paquets ROS</p> 
+                                    <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+    sudo apt install ros-dev-tools
+                                    </pre></div> 
+                                <p>Ajoutez ensuite les messages Create® 3 :</p>       
+                                    <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+    sudo apt install -y ros-humble-irobot-create-msgs
+                                     </pre></div> 
+                                <p>Installez les paquets suivants</p>       
+                                     <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+    sudo apt install -y build-essential python3-colcon-common-extensions python3-rosdep ros-humble-rmw-cyclonedds-cpp
+
+                                      </pre></div> 
+                                
+                    <h2>Configuration de l'environnement</h2>
+                                   <h3>Recherche du script d'installation</h3> 
+                                    <p>Configurez votre environnement en créant le fichier suivant.</p>
+                                    <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">
+    # Replace &quot;.bash&quot; with your shell if you&#39;re not using bash</span><span class="c1">
+    # Possible values are: setup.bash, setup.sh, setup.zsh</span><span class="nb">
+    source</span> /opt/ros/humble/setup.bash
+                                        </pre></div>
+                                        <p>À ce stade, nous allons définir notre RMW (middleware ROS 2) par défaut. 
+                                            Le RMW que vous définissez ici doit correspondre au RMW de votre robot, qui peut être trouvé sur la page de configuration de l'application. 
+                                            saisissez la ligne suivante:</p>       
+                                        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+    echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
+                                         </pre></div>  
+                    <h2>Installation en vidéo</h2>
+                                    <p>La vidéo ci-dessous montre l'installation de Ros 2 avec les toutes les commandes ci-dessus</p>      
+                                    <video width="800" height="500" controls>
+                                        <source src="C:\Users\tizen\Desktop\Portfolio1\Tutoriel\ros2Install.webm" type="video/webm" > 
+                                    </video>
+                                    <br/>
+                                    <p> <b>L'installation de ROS 2 est maintenant terminé, vous pouvez passer à la suite</b></p>
+            
+                                
+                                </div>
+                            </li>
+                        </ul>   
+
+
+                    
+                </div>
+            </div>
+            <hr>
+            <div class="copyright text-center text-gray" role="contentinfo"> <i class="fa fa-copyright"></i> Ken TIZEN DJONGUE 2023 Tutoriel <a class="text-gray"
+                href="https://github.com/turtlebot/turtlebot4-user-manual/commit/27886cafd1f154db8cbf8d3bc3edaa734ce976da"
+                title="27886cafd1f154db8cbf8d3bc3edaa734ce976da" rel="noreferrer" target="_blank">27886ca</a> <br>
+            <div class="generator"> Built with <a href="https://pages.github.com" rel="noreferrer" target="_blank"
+                    title="github-pages v209">Vs-code</a> using a <a
+                    href="https://github.com/rundocs/jekyll-rtd-theme" rel="noreferrer" target="_blank"
+                    title="rundocs/jekyll-rtd-theme v2.0.10">theme</a> provided by <a href="https://rundocs.io"
+                    rel="noreferrer" target="_blank">RunDocs</a>. </div>
+        </div>
+        </div>
+    </div>
+    <div class="addons-wrap d-flex flex-column overflow-y-auto">
+        <div class="status d-flex flex-justify-between p-2">
+            <div class="title p-1"> <i class="fa fa-book"></i> Serveur ROS sur VM </div>
+            <div class="branch p-1"> <span class="name"> v1.0.0 </span> <i class="fa fa-caret-down"></i> </div>
+        </div>
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/rundocs/jekyll-rtd-theme@2.0.10/assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/rundocs/jekyll-rtd-theme@2.0.10/assets/js/theme.min.js"></script>
+    <script src="/turtlebot4-user-manual/assets/js/tabs.js"></script>
+</body>
+</html>
